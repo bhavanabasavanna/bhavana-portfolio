@@ -298,6 +298,7 @@ window.addEventListener('load', () => {
     }, 1000);
 });
 
+
 // Add spinner animation
 const spinnerStyles = document.createElement('style');
 spinnerStyles.textContent = `
