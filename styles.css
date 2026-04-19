@@ -8,8 +8,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+    color: #555;
+    background-color: #f5f7fa;
 }
 
 .container {
@@ -77,8 +77,8 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    color: #37474f;
     padding: 120px 0 80px;
     display: flex;
     align-items: center;
@@ -131,24 +131,35 @@ body {
 }
 
 .btn-primary {
-    background: #007bff;
+    background: #64b5f6;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #0056b3;
+    background: #42a5f5;
     transform: translateY(-2px);
 }
 
 .btn-secondary {
     background: transparent;
-    color: white;
-    border: 2px solid white;
+    color: #1976d2;
+    border: 2px solid #1976d2;
 }
 
 .btn-secondary:hover {
-    background: white;
-    color: #007bff;
+    background: #1976d2;
+    color: white;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #37474f;
+    border: 2px solid #37474f;
+}
+
+.btn-outline:hover {
+    background: #37474f;
+    color: white;
 }
 
 .social-links {
@@ -180,12 +191,26 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-.code-animation pre {
-    color: #d4d4d4;
-    font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    overflow-x: auto;
+.profile-placeholder {
+    background: #ffffff;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0,123,255,0.2);
+    border: 4px solid #64b5f6;
+    transition: transform 0.3s ease;
+}
+
+.profile-placeholder i {
+    font-size: 4rem;
+    color: #64b5f6;
+}
+
+.profile-placeholder:hover {
+    transform: scale(1.05);
 }
 
 /* About Section */
@@ -323,7 +348,7 @@ body {
 }
 
 .skill-category h3 {
-    color: #007bff;
+    color: #1976d2;
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     display: flex;
