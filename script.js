@@ -86,14 +86,13 @@ if (contactForm) {
         e.preventDefault();
         
         // Get form data
-        const formData = new FormData(contactForm);
         const name = contactForm.querySelector('input[type="text"]').value;
         const email = contactForm.querySelector('input[type="email"]').value;
         const subject = contactForm.querySelectorAll('input[type="text"]')[1].value;
         const message = contactForm.querySelector('textarea').value;
         
-        // Create mailto link
-        const mailtoLink = `mailto:bhavana@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+        // Create mailto link with correct email
+        const mailtoLink = `mailto:bbhavana381@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
         
         // Open email client
         window.location.href = mailtoLink;
@@ -105,6 +104,15 @@ if (contactForm) {
         showNotification('Thank you for your message! I\'ll get back to you soon.');
     });
 }
+
+// Email link click handler
+document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const email = link.getAttribute('href').replace('mailto:', '');
+        window.location.href = `mailto:${email}`;
+    });
+});
 
 // Notification system
 function showNotification(message) {
