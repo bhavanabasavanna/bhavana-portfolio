@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavana Basavanna - DevOps Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>BHAVANA</h3>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>BHAVANA BASAVANNA</h1>
+            <h2>DevOps Engineer | CI/CD Pipeline Specialist</h2>
+            <p>Results-driven DevOps Engineer with expertise in designing and implementing complex CI/CD pipelines using Jenkins, Groovy scripting, and containerization technologies.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#experience" class="btn btn-secondary">View Experience</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bhavana-basavanna-b16185271" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/bhavana" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="code-animation">
+                <pre><code>pipeline {
+    agent { label 'jira-generic' }
+    stages {
+        stage('Build') {
+            steps {
+                sh './build.sh'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh './test.sh'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh './deploy.sh'
+            }
+        }
+    }
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate DevOps Engineer specializing in building and optimizing CI/CD pipelines for enterprise applications. With extensive experience in 5G telecommunications infrastructure, I help organizations achieve faster, more reliable software delivery through automation and modern DevOps practices.</p>
+                    <p>My expertise spans from designing complex Jenkins pipelines with Groovy scripting to implementing container-based testing environments and Python automation solutions. I'm committed to continuous learning and staying current with emerging technologies in cloud-native development and DevOps.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>40%</h3>
+                            <p>Build Time Reduction</p>
+                        </div>
+                        <div class="stat">
+                            <h3>99.9%</h3>
+                            <p>Test Reliability</p>
+                        </div>
+                        <div class="stat">
+                            <h3>90%</h3>
+                            <p>Automation Success</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-image">
+                        <img src="bhavana_profile.png" alt="Bhavana Basavanna - DevOps Engineer">
+                    </div>
+                    <div class="tech-stack">
+                        <i class="fab fa-jenkins"></i>
+                        <i class="fab fa-docker"></i>
+                        <i class="fab fa-python"></i>
+                        <i class="fab fa-linux"></i>
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> DevOps & CI/CD</h3>
+                    <ul>
+                        <li>Jenkins (Pipeline as Code, Shared Libraries)</li>
+                        <li>Groovy (Advanced Scripting, Jenkins DSL)</li>
+                        <li>Container Technologies (Docker, Podman, Buildah)</li>
+                        <li>Build Tools (Maven, Gradle, RPM, Artifactory)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming & Scripting</h3>
+                    <ul>
+                        <li>Python (Automation, API Integrations, Data Parsing)</li>
+                        <li>Shell Scripting (Bash, Linux Administration)</li>
+                        <li>SQL (Database Management, Query Optimization)</li>
+                        <li>JavaScript (Web Development, Automation)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-alt"></i> Testing & Quality</h3>
+                    <ul>
+                        <li>Robot Framework (Test Automation)</li>
+                        <li>Code Coverage (LCOV, gcov)</li>
+                        <li>Security Scanning (BlackDuck, Static Analysis)</li>
+                        <li>Quality Assurance (Automated Testing)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Infrastructure & Tools</h3>
+                    <ul>
+                        <li>Linux Systems (RHEL, Ubuntu)</li>
+                        <li>Version Control (Git, GitHub, GitLab)</li>
+                        <li>Monitoring & Logging</li>
+                        <li>Cloud Platforms (AWS, Azure)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>DevOps Engineer</h3>
+                        <h4>Dell Technologies</h4>
+                        <span class="date">2023 - Present</span>
+                        <ul>
+                            <li>Designed and implemented comprehensive Jenkins pipelines for 5G network infrastructure components</li>
+                            <li>Developed multi-stream pipeline workflows supporting parallel builds across multiple variants</li>
+                            <li>Integrated Robot Framework testing with Jenkins pipelines for automated result reporting</li>
+                            <li>Implemented build caching strategies reducing build times by 40%</li>
+                            <li>Developed Python scripts for test result parsing and API integrations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Multi-Stream CI/CD Pipeline</h3>
+                        <p>Advanced Jenkins pipeline system supporting multiple build variants with parallel execution and intelligent resource management.</p>
+                        <div class="project-tech">
+                            <span>Jenkins</span>
+                            <span>Groovy</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Test Automation Framework</h3>
+                        <p>Comprehensive test automation system integrating Robot Framework with Python for result parsing and reporting.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Robot Framework</span>
+                            <span>Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Security & Quality Pipeline</h3>
+                        <p>Integrated security scanning and code coverage analysis into CI/CD pipelines ensuring 100% compliance.</p>
+                        <div class="project-tech">
+                            <span>BlackDuck</span>
+                            <span>LCOV</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always interested in discussing DevOps opportunities, sharing knowledge, or collaborating on exciting projects. Feel free to reach out!</p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/bhavana-basavanna-b16185271" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="mailto:bhavana@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>bhavana@example.com</span>
+                        </a>
+                        <a href="https://github.com/bhavana" target="_blank" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Bhavana Basavanna. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/bhavana-basavanna-b16185271" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/bhavana" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
