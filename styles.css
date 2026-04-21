@@ -183,19 +183,19 @@ body {
 }
 
 .social-link {
-    color: white;
+    color: #6c584c;
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     padding: 8px 16px;
     border-radius: 20px;
-    background: rgba(255,255,255,0.1);
+    background: #adc178;
     transition: all 0.3s ease;
 }
 
 .social-link:hover {
-    background: rgba(255,255,255,0.2);
+    background: #a98467;
     transform: translateY(-2px);
 }
 
